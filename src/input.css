@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Manrope', sans-serif;
+}
+
+
+.typing-container {
+    font-weight: 550;
+    font-size: 5vw;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-flex;
+    align-items: center;
+}
+
+#cursor {
+    display: inline-block;
+    width: 7px;
+    margin-left: 12px;
+    animation: blink-caret 1s step-end infinite;
+}
+
+@keyframes blink-caret {
+    from, to { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+
+ul li {
+    padding: 1vw;    
+}
+
+
+ul li:hover {
+    background-color: rgb(128, 128, 128, 0.5);
+    border-radius: 9999px;
+    color: white;
+}
